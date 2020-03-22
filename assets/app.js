@@ -41,14 +41,11 @@ function customBtnFunc(){
 function setActiveButton(event){
     let div=document.getElementById("board");
     div.style.display="none";
-
     if(event.target.nodeName=="BUTTON"){
-
         if( document.querySelector("#custombtn")==active)
         {
             document.querySelector("#custombtn").className="notActive";
             document.querySelector("#custombtn").value="";
-
             active="";
         }
         if(active===event.target)
@@ -102,7 +99,7 @@ function calculate(){
         div.style.display="none";
         div.className="";
         div.className="animated flipInX";
-        div.innerHTML="Enter a numeric value without % sign for custom percentage";
+        div.innerHTML="Enter a valid custome percentage value without % sign";
         div.style.display="block";
      }
 
@@ -115,7 +112,16 @@ function calculate(){
             if(getPercentage(present,conducted+i)<=active.value){
 
                 newpresent=present+i;
+                if(getPercentage(present,conducted+i)==active.value)
+                {
+                  canBunk=0;
+                }
+              else{
                 canBunk=newpresent-present-1;
+              
+              }
+                
+                
                 let per=getPercentage(present,conducted).toFixed(2);
                 console.log("PERCENTAGE : ", per);
                 console.log("Classes you can bunk : ",canBunk);
@@ -123,7 +129,7 @@ function calculate(){
                 div.style.display="none";
                 div.className="";
                 div.className="animated flipInX";
-                div.innerHTML="Your attendece percentage : "+getPercentage(present,conducted).toFixed(2)+"<br> You can bunk : "+canBunk+" classes";
+                div.innerHTML="Your attendece percentage is : "+getPercentage(present,conducted).toFixed(2)+"<br> You can bunk : "+canBunk+" classes";
                 div.style.display="block";
               
             
@@ -150,10 +156,8 @@ function calculate(){
                     div.style.display="none";
                     div.className="";
                     div.className="animated flipInX";
-                    div.innerHTML="Your attendece percentage is "+getPercentage(present,conducted).toFixed(2)+"<br> You Should Attend : "+classesto+" classes more to bring back your attendece to "+ active.value+"%";
+                    div.innerHTML="Your attendece percentage is "+getPercentage(present,conducted).toFixed(2)+"<br> You need to attend : "+classesto+" classes more to bring back your attendece to "+ active.value+"%";
                     div.style.display="block";
-
-
                     break;
                 }
                 i++;
@@ -167,7 +171,7 @@ function calculate(){
                     div.style.display="none";
                     div.className="";
                     div.className="animated flipInX";
-                    div.innerHTML="Please fill in appropriate inputs";
+                    div.innerHTML="Please fill in classes attended and present fields";
                     div.style.display="block";
  }
 
