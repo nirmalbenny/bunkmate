@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/animate.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bunkster</title>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="app animated pulse">
+        <h1>AutoClose for Google Meet</h1>
+        <ol>
+            <li>Download the zip file and extract it</li>
+            <li>type in <code>chrome://extensions</code> in your address bar</address></li>
+            <li>Turn on developer mode, using toggle button on the  top right</li>
+            <li>Click "Load Unpacked" from top left corner and select the extracted zip file </li>
+            <li>Go to any google meet session, and join</li>
+            <li>Click the AutoClose button on the top right corner</li>
+
+        </ol>
+        <p>Go to any google meet and join, Press the 'AutoClose' button from the top right
+             
+        </p><br><br>
+        <a id="terms" href="./terms-Meet">By downloading using this extension you agree to the terms and conditions </a>
+        <a id="btndwnld" href="">Download</a> 
+        
+        <div class="footer">
+          <span> 
+            <a
+              target="_blank"
+              id="linkedin"
+              href="http://bunkmate.online"
+              > Go back to BunkMate</a
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/app.js"></script>
+    <style>
+        #app{
+            width: 400px;
+        }
+        #terms{
+            display: block;
+            padding: none;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+            color:blue;
+            
+        }
+      h1 {
+        font-size: 32px;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+      }
+     a{
+        margin: auto;
+        padding: 15px;
+        border: 1px solid tomato;
+        background: none;
+        color: tomato;
+        border-radius: 10px;
+        outline: none;
+        text-decoration: none;;
+
+      }
+      a:hover{
+          background: tomato;
+          color: white;
+          transform:translate(1.05);
+      }
+      ol{
+          text-align: center;
+          margin-left: 10%;
+          width: 65%;
+          padding: 25px;
+          
+          background-color: wheat;
+      }
+      #btndwnld{
+           width: 60%;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+            background: rgb(38, 201, 6);
+          color: white;
+        }
+        #btndwnld:hover{
+            background: tomato;
+          color: white;
+        }
+        p{
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+      p span{
+          font-size: 12px;
+          color: tomato;
+      }
+
+      #terms:hover{
+          background: none;
+          color: tomato;
+          
+      }
+     
+    </style>
+  </body>
+</html>

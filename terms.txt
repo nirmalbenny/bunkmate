@@ -1,0 +1,23 @@
+Meet AutoClose extension
+Version : 1.0
+
+------------------------------------------------------------------------
+                    TERMS AND CONDITIONS 
+------------------------------------------------------------------------
+This extension is provided freely as is without any garuntee or promise.
+There might be bugs that may or maynot break the websites on which you run this extension.
+
+The term "You and Users" will be used to refer the person who downloads and/or installs this extension.
+The term 'I' will be used to refer to the developer of the extension.
+
+You agree to the following terms and conditions by downloading and using this extsnsion.
+1. I wont be liable for any damages that is caused by any bugs in the source code.
+2. Any violation of terms and conditions of any service provider, company or websites that happened when
+   using the extension will be your responsibility.It is the users responsibility to make sure in advance
+   such violation do not occur.
+3. This extsnsions is strictly for educational purpose. 
+4. The terms and conditions of usage of this extension maybe amended with or without any prior notificaation.
+    It is your responsibility to find the updated terms of usage and adhere to it. 
+5. Up-to date copy of the TERMS AND CONDITIONS will be available on the original download page.
+-------------------------------------------------------------------------
+
